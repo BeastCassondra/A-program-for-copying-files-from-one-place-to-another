@@ -1,0 +1,15 @@
+echo "# A-program-for-copying-files-from-one-place-to-another" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/BeastCassondra/repository.git
+git push -u origin main
+import shutil
+
+# Define the source and destination paths
+source_path = "/path/to/source/file"
+destination_path = "/path/to/destination/file"
+
+# Copy the file from the source to the destination
+shutil.copy(source_path, destination_path)
